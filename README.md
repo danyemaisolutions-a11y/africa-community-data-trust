@@ -18,7 +18,7 @@ The platform addresses extractive data collection in global health and AI resear
 3. **Equitable Benefit-Sharing:** A transparent tracking ledger monitoring non-monetary and capacity-building returns to communities.
 4. **Zero-Harm Synthetic Prototyping:** Complete architectural development and testing gated behind synthetic mock data to ensure zero participant risk prior to formal institutional ethics clearance.
 
-ACDT is an open-source public-interest technology initiative stewarded by **DanYem Innotech AI Solutions Ltd**.
+ACDT is an open-source public-interest technology initiative stewarded by **DanYem Innotech AI Solutions Ltd (RC 10003216, Lagos, Nigeria)**.
 
 ---
 
