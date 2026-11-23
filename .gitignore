@@ -1,0 +1,41 @@
+# ACDT confidential internal documentation
+/ACDT_Phase1_Documentation_Review.txt
+
+# Environment files and local secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local PostgreSQL credential and connection files
+.pgpass
+*.pgpass
+pgpass.conf
+*.conninfo
+
+# Local ACDT connection reference
+acdt-dev.ref
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Python virtual environments
+.venv/
+venv/
+ENV/
+
+# Temporary and operating-system files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor and IDE settings
+.vscode/
+.idea/
