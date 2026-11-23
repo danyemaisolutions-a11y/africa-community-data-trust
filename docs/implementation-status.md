@@ -17,7 +17,7 @@ The reviewed repository includes:
 - `README.md`: project vision and initial information.
 - `LICENSE`: MIT License.
 - `database/migrations/001_initial_schema.sql`: Original baseline PostgreSQL-oriented schema and sample inserts. RLS is enabled on six tables; in this baseline migration specifically, no explicit `CREATE POLICY` statements were identified. Audit-log rules are defined.
-- `database/stage-b-review/`: Local Stage B review package. Four files are proposed for the published repository: migration (`ACDT_Stage_B_01_migration.sql`), bootstrap template (`ACDT_Stage_B_02_first_governor_bootstrap.sql`), security test suite (`ACDT_Stage_B_03_security_tests.sql`), and package README (`ACDT_Stage_B_README.md`). A fifth file, `ACDT_Stage_B_REHEARSAL_ONLY.sql`, is a local generated convenience bundle retained locally and excluded from the published checkout. These Stage B review files remain uncommitted to Git at this checkpoint.
+- `database/stage-b-review/`: Local Stage B review package. Four source/package files are recorded in Git commit `70a241b`: migration (`ACDT_Stage_B_01_migration.sql`), bootstrap template (`ACDT_Stage_B_02_first_governor_bootstrap.sql`), security test suite (`ACDT_Stage_B_03_security_tests.sql`), and package README (`ACDT_Stage_B_README.md`). A fifth file, `ACDT_Stage_B_REHEARSAL_ONLY.sql`, is a local generated convenience bundle retained locally and excluded from the published checkout. The four source/package files are committed; the generated rehearsal bundle remains outside version control. This records repository status, not remote publication or independent verification.
 - `apps/web/`: reported present as an empty local placeholder directory; no tracked implementation files exist in the audited state.
 - `database/seed/`: reported present as an empty local placeholder directory; no seed-data script (such as early proposed `001_synthetic_seed.sql`) is present or tracked. Actual included synthetic fixtures are located in `synthetic_fixtures/fixtures.json` and `synthetic_fixtures/fixtures.sql`.
 - `docs/`: project documentation, including architecture, governance, privacy/security, roadmap, implementation status, Phase 2A and supporting design documents.
@@ -53,7 +53,7 @@ Recheck Git status, branch, and file inventory before staging, committing, migra
 ### Stage B development checkpoint (project-owner-reported)
 
 In the Supabase development project `acdt-dev`, the project owner reported the following development checkpoint results:
-- The Stage B migration (`ACDT_Stage_B_01_migration.sql`) was committed to the database. (This database COMMIT is distinct from Git commit; the local Stage B files remain uncommitted to Git at this checkpoint.)
+- The Stage B migration (`ACDT_Stage_B_01_migration.sql`) was committed to the database. (This database COMMIT is distinct from Git commit; the four Stage B source/package files are recorded in Git commit `70a241b`, while the generated rehearsal bundle remains local-only.)
 - A transaction-and-rollback security rehearsal reported 52 passing sequential assertions.
 - The five checked Stage B tables (`user_profiles`, `org_memberships`, `membership_roles`, `platform_roles`, and `acdt_security.organization_trust`) were confirmed present after commit.
 - The first platform governor was appointed using the bootstrap procedure, and the saved role and active profile were verified in a separate query.

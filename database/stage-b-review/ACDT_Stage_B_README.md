@@ -3,7 +3,7 @@
 ## Files
 
 ### Published Stage B Package Files
-The following four files constitute the reviewed Stage B source package proposed for publication:
+The following four files constitute the Stage B source package recorded in Git commit `70a241b`:
 - `ACDT_Stage_B_README.md`: this package guide and trust-boundary reference.
 - `ACDT_Stage_B_01_migration.sql`: additive profile, organization-trust, membership, and role tables/functions for the reported Supabase schema.
 - `ACDT_Stage_B_02_first_governor_bootstrap.sql`: explicit, one-time first-governor setup. It contains placeholders and cannot be run safely until those are deliberately replaced. The template source must remain unpopulated; any local filled-in copy must remain strictly outside the public repository.
@@ -14,7 +14,7 @@ The following four files constitute the reviewed Stage B source package proposed
 
 ## Status and assumptions
 Review artifacts only. In the Supabase development project `acdt-dev`, the project owner reported the following development checkpoint results:
-- The Stage B migration was committed to the database. (This database COMMIT is distinct from Git commit; the local Stage B files remain uncommitted to Git at this checkpoint.)
+- The Stage B migration was committed to the database. (This database COMMIT is distinct from Git commit; the four Stage B source/package files are recorded in Git commit `70a241b`, while the generated rehearsal bundle remains local-only.)
 - A transaction-and-rollback security rehearsal reported 52 passing sequential assertions.
 - The five checked Stage B tables were confirmed present after commit.
 - The first platform governor was appointed, and the saved role and active profile were verified in a separate query.
